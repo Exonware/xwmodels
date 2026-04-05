@@ -1,0 +1,9 @@
+projects:
+  xwmodels:
+    repo: xwmodels
+    package_main: exonware-xwmodels
+    package_wrapper: xwmodels
+    python_version: "3.12"
+    has_wrapper: true
+    uses_check_versions: true
+
