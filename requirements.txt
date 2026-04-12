@@ -1,0 +1,117 @@
+# xwentity Requirements
+# Company: eXonware.com
+# Author: eXonware Backend Team
+# Email: connect@exonware.com
+# Version: 0.0.1.2
+# Generation Date: February 2, 2025
+#
+# This file contains all dependencies needed for xwentity
+# Requires Python 3.12+
+#
+# Usage:
+#   pip install -r requirements.txt
+#   
+# For Replit and other cloud IDEs:
+#   Just add this file to your project root and dependencies will be auto-installed
+
+# =============================================================================
+# CORE DEPENDENCIES
+# =============================================================================
+# Source size (src/*): ~219.6 KB
+pip                     # Package installer (CI and lazy install)
+
+# eXonware Core Libraries (no version specifications - always use latest)
+exonware-xwsystem==0.9.0.39                    # Foundation library
+exonware-xwschema==0.4.0.12                    # Schema validation
+exonware-xwdata==0.9.0.17                      # Data manipulation
+exonware-xwnode==0.9.0.25                      # Graph engine
+exonware-xwaction==0.9.0.12                    # Action/workflow orchestration
+
+# Optional BaaS Integration Dependencies (only needed for integrations/ features)
+# Core xwentity functionality works without these using provider interfaces
+# exonware-xwauth==0.0.1.8                      # Authentication/authorization (optional)
+# exonware-xwstorage==0.0.1.6                   # Storage backends (optional)
+
+# =============================================================================
+# DEVELOPMENT AND TESTING DEPENDENCIES
+# =============================================================================
+
+# Testing Framework
+pytest>=7.0.0                       # Testing framework
+pytest-cov>=4.0.0                   # Coverage reporting
+pytest-asyncio>=0.20.0              # Async testing support
+
+# Code Quality
+black>=22.0.0                       # Code formatting
+isort>=5.10.0                       # Import sorting
+flake8>=4.0.0                       # Linting
+
+# Type Checking
+mypy>=0.950                          # Static type checking
+
+# =============================================================================
+# OPTIONAL PERFORMANCE ENHANCEMENTS
+# =============================================================================
+
+# Add optional performance dependencies here
+# Example:
+# orjson>=3.8.0                       # Ultra-fast JSON parsing (optional)
+
+# =============================================================================
+# COMPATIBILITY NOTES
+# =============================================================================
+#
+# Python Version Compatibility:
+# - Minimum: Python 3.12
+# - Tested: Python 3.12+
+#
+# Platform Compatibility:
+# - Windows: Full support
+# - Linux: Full support  
+# - macOS: Full support
+#
+# Cloud IDE Support:
+# - Replit: ✅ Full support
+# - GitHub Codespaces: ✅ Full support  
+# - GitPod: ✅ Full support
+# - Google Colab: ✅ Full support
+# - Jupyter: ✅ Full support
+#
+# =============================================================================
+# INSTALLATION VERIFICATION
+# =============================================================================
+#
+# After installing requirements, verify with:
+#   python -c "from exonware.xwentity import *; print('✅ xwentity loaded!')"
+#
+# Or run comprehensive verification:
+#   python tests/verify_installation.py
+#
+# Expected output:
+#   🎉 SUCCESS! exonware.xwentity is ready to use!
+aiofiles
+cryptography
+bcrypt
+psutil
+opentelemetry-api
+cachetools
+pylru
+msgspec
+orjson
+hyperlight_hyperjson
+json5
+PyYAML
+tomli-w
+xmltodict
+dicttoxml
+msgpack
+cbor2
+pymongo
+httpx
+brotlicffi
+zstandard
+rich
+attrs
+tomli
+cachebox
+brotli
